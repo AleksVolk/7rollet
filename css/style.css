@@ -679,6 +679,11 @@ body.popup-show::after {
 .order-popup .card-info:not(:last-child) {
   margin-bottom: 1.625rem;
 }
+@media (max-width: 47.99875em) {
+  .order-popup {
+    flex-direction: column;
+  }
+}
 
 .price-order-popup {
   background: #f4f4f4;
@@ -1671,7 +1676,8 @@ body.popup-show::after {
 
 .form-label {
   display: inline-block;
-  width: 15.9375rem;
+  min-width: 15.9375rem;
+  width: 100%;
   height: 3.125rem;
   border-radius: 0.625rem;
   background-color: #fff;
@@ -6981,7 +6987,7 @@ body.popup-show::after {
   flex: 0 1 calc(50% - 0.9375rem);
   border: 1px solid #809999;
 }
-@media (max-width: 29.99875em) {
+@media (max-width: 47.99875em) {
   .order-item__label {
     flex: 0 1 100%;
   }
@@ -6999,6 +7005,10 @@ body.popup-show::after {
 }
 .order-item__selects:not(:last-child) {
   margin-bottom: 1.25rem;
+}
+.order-item__selects .select:first-child {
+  position: relative;
+  z-index: 10;
 }
 @media (max-width: 29.99875em) {
   .order-item__selects {
