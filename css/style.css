@@ -4988,10 +4988,12 @@ body.popup-show::after {
 }
 .card-content-slider__slide {
   text-align: center;
+  max-height: 25rem;
 }
 .card-content-slider__slide img {
+  padding: 1.25rem;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 .card-content-slider__arrows {
@@ -6185,6 +6187,21 @@ body.popup-show::after {
 }
 .our-works__btn {
   min-width: 23.25rem;
+}
+@media (min-width: 73.125em) {
+  .our-works__btn {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 73.125em) {
+  .our-works__btn {
+    margin-top: calc(1.875rem + 0.625 * (((100vw - 20rem)) / ((53.125))));
+  }
+}
+@media (max-width: 20em) {
+  .our-works__btn {
+    margin-top: 1.875rem;
+  }
 }
 .our-works__btn span {
   justify-content: center;
