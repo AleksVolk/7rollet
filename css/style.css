@@ -2503,6 +2503,7 @@ body.popup-show::after {
   background-color: rgba(0, 17, 17, 0.7);
   transition: all 0.3s ease 0s;
   z-index: 50;
+  overflow: auto;
 }
 .cart._active {
   opacity: 1;
