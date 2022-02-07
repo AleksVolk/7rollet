@@ -3568,7 +3568,7 @@ body.popup-show::after {
     min-height: 3.125rem;
     opacity: 1;
     z-index: 2;
-    transition: border-color 0.3s linear, color 0.3s linear;
+    transition: border 0.3s linear, color 0.3s linear;
   }
   .thumbs-universal__slide::before {
     content: " ";
@@ -3584,7 +3584,8 @@ body.popup-show::after {
     transition: opacity 0.3s linear;
   }
   .thumbs-universal__slide.swiper-slide-thumb-active {
-    border-color: transparent;
+    border-color: linear-gradient(268.44deg, #75D910 1.6%, #693 98.33%);
+    border: none;
     color: #fff;
   }
   .thumbs-universal__slide.swiper-slide-thumb-active::before {
@@ -3593,7 +3594,8 @@ body.popup-show::after {
 }
 @media (min-width: 47.99875em) and (any-hover: hover) {
   .thumbs-universal__slide:hover {
-    border-color: transparent;
+    border-color: linear-gradient(268.44deg, #75D910 1.6%, #693 98.33%);
+    border: none;
     color: #fff;
   }
   .thumbs-universal__slide:hover::before {
