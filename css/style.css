@@ -7053,6 +7053,7 @@ body.popup-show::after {
 .order-item__label {
   flex: 0 1 calc(50% - 0.9375rem);
   border: 1px solid #809999;
+  min-width: auto;
 }
 @media (max-width: 47.99875em) {
   .order-item__label {
