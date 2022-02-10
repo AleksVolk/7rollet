@@ -1694,7 +1694,7 @@ body.popup-show::after {
   height: 3.125rem;
   border-radius: 0.625rem;
   background-color: #fff;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 .form-label__input {
   width: 100%;
@@ -6952,6 +6952,9 @@ body.popup-show::after {
   .form-contacts__title {
     text-align: center;
   }
+}
+.form-contacts__label {
+  min-width: 15.9375rem;
 }
 .form-contacts__label._form-error {
   border: 2px solid red;
