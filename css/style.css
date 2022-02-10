@@ -250,6 +250,10 @@ body {
     padding: 0.5rem;
   }
 }
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 6px 35px rgba(109, 204, 21, 0.9);
+}
 @media (min-width: 47.99875em) {
   .btn-primary_blinds span {
     justify-content: space-between;
@@ -477,6 +481,9 @@ textarea.input {
   flex: 0 1 calc(50% - 0.975rem);
   border: 1px solid #809999;
   border-radius: 0.625rem;
+}
+.select_order._form-error {
+  border: 2px solid red;
 }
 
 .select_select-our-works {
@@ -1684,8 +1691,6 @@ body.popup-show::after {
 
 .form-label {
   display: inline-block;
-  min-width: 15.9375rem;
-  width: 100%;
   height: 3.125rem;
   border-radius: 0.625rem;
   background-color: #fff;
@@ -1697,15 +1702,21 @@ body.popup-show::after {
   padding-left: 1.35em;
   padding-right: 2.5em;
   background-position: right 1.0625rem center;
+  border-radius: 0.625rem;
   background-repeat: no-repeat;
   background-size: 1rem;
   background-color: transparent;
 }
 .form-label__input_name {
+  padding-right: 3em;
   background-image: url("../img/input-name.svg");
 }
 .form-label__input_phone {
+  padding-right: 3em;
   background-image: url("../img/input-phone.svg");
+}
+.form-label__input::-webkit-outer-spin-button, .form-label__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 .form-label__input:focus,
 .form-label__input :active {
@@ -5792,6 +5803,7 @@ body.popup-show::after {
 }
 .application-form__label {
   border: 2px solid transparent;
+  min-width: 15.9375rem;
 }
 .application-form__label:not(:last-of-type) {
   margin-bottom: 1.25rem;
@@ -5800,6 +5812,9 @@ body.popup-show::after {
   .application-form__label:hover {
     border-color: #693;
   }
+}
+.application-form__label._form-error {
+  border: 2px solid red;
 }
 .application-form__btn {
   margin-top: 0.875rem;
@@ -6938,6 +6953,9 @@ body.popup-show::after {
     text-align: center;
   }
 }
+.form-contacts__label._form-error {
+  border: 2px solid red;
+}
 .form-contacts__btn {
   min-width: 8.5rem;
 }
@@ -7043,6 +7061,9 @@ body.popup-show::after {
   flex: 0 1 calc(50% - 0.9375rem);
   border: 1px solid #809999;
   min-width: auto;
+}
+.order-item__label._form-error {
+  border: 2px solid red;
 }
 @media (max-width: 47.99875em) {
   .order-item__label {
